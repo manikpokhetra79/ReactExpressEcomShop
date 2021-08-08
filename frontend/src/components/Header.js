@@ -3,9 +3,10 @@ import {Navbar,Nav,Container} from 'react-bootstrap';
 const Header = () => {
     return (
         <header>
-           <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+           <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
             <Container>
-                <Navbar.Brand href="/"><i class="fab fa-shopify fa-2x"></i> ProShop</Navbar.Brand>
+                <Navbar.Brand href="/">
+                <i className="fab fa-shopify fa-2x"></i>ProShop</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
