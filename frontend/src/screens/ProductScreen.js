@@ -13,7 +13,7 @@ useEffect(()=>{
         setProduct(data);
     }
     fetchProduct();
-  },[])
+  },[match])
     return (
         <>
            <Link className="btn btn-secondary my-3" to='/'>
