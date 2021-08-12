@@ -1,5 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import colors from 'colors';
+
 import connectDb from './config/db.js';
 import products from './data/products.js';
 
@@ -23,5 +25,5 @@ app.listen(PORT,function(err){
         console.log("Error while connecting to Express Server");
         return;
     }
-    console.log(`Express Server running in ${process.env.NODE_ENV} mode at : ${PORT} port`);
+    console.log(`Express Server running in ${process.env.NODE_ENV} mode at : ${PORT} port`.yellow.italic);
 });
